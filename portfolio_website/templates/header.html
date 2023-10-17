@@ -1,0 +1,33 @@
+{% load static %}
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="full">
+                    <a class="logo" href="/"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="full">
+                    <div class="right_header_info">
+                        <ul>
+                            <li class="dinone"><a href="https://www.instagram.com/" target="_blank">
+                                <img style="margin-right: 15px;margin-left: 15px;" src="{% static 'images/insta_blue_icon.png' %}" alt="#">
+                                @instagram</a>
+                            </li>
+                            <li class="dinone"><img style="margin-right: 15px;" src="{% static 'images/mail_icon.png' %}" alt="#"><a href="#">mailname@mail.com</a></li>
+
+                            <li class="button_user"> <a class="button" href="/contact">BOOK ONLINE</a></li>
+
+                            <li>
+                                <button type="button" id="sidebarCollapse">
+                                    <a href="#">MENU</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

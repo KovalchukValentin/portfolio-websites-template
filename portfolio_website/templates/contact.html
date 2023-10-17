@@ -1,0 +1,73 @@
+{% load static %}
+<div id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-12">
+                <div class="title">
+                    <h2>Leave<strong class="white"> your </strong>details</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                <!-- form class="main_form">
+                <meta id="csrf" content="{{ csrf_token }}"> -->
+                <div class="row">
+                    {% csrf_token %}
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <input class="form-control" placeholder="Name *" type="text" name="Your Name" id="input_name">
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <input class="form-control" placeholder="Phone * (380504443322)" type="text" name="Phone" id="input_telephone">
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <input class="form-control" placeholder="Email" type="text" name="Email" id="input_email">
+                        </div>
+                        <!--<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <input class="form-control" placeholder="Date" type="date" name=" Date">
+                        </div>-->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <textarea class="textarea" placeholder="Message" type="text" name="Message" id="input_message"></textarea>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="time_box">
+
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h3 id="error_text"></h3>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <button class="open">Choose a date</button>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <ul class="dates">
+                            </ul>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <ul class="time_cells">
+                            </ul>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <button class="send">Send</button>
+                        </div>
+
+                    </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="img-box">
+                    <a target="_blank" href="https://www.google.com/maps/dir/Khreshchatyk,+Kyiv,+02000/Golden+Gate,+Volodymyrska+St,+40%D0%90,+Kyiv,+01034/@50.4481536,30.5128851,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x40d4ce54073a71cb:0xbaf9b9c70b1500d3!2m2!1d30.5227597!2d50.4473449!1m5!1m1!1s0x40d4ce59e3ab65a7:0x694b8565cab02eaf!2m2!1d30.5133317!2d50.4488319!3e2?entry=ttu">
+                        <figure>
+                            <img src="{% static 'images/map.jpg' %}" alt="img" />
+                        </figure>
+                        <h3><strong class="white">Click to open the route on a Google map</strong>></Tap></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
